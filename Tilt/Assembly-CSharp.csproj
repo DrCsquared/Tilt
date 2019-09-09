@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Ballmovement.cs" />
     <Compile Include="Assets\Quantum Tek\Menu Template\Scripts\Menu\Menu.cs" />
     <Compile Include="Assets\Quantum Tek\Menu Template\Scripts\Menu\Tab.cs" />
     <Compile Include="Assets\Quantum Tek\Menu Template\Scripts\Menu\Window.cs" />
