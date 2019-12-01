@@ -129,7 +129,8 @@
     <Compile Include="Assets\Scripts\CoinScript.cs" />
     <Compile Include="Assets\Scripts\LevelMovement.cs" />
     <Compile Include="Assets\Scripts\LoseScript.cs" />
-    <Compile Include="Assets\Scripts\MenuScript.cs" />
+    <Compile Include="Assets\Scripts\Menu Script\MenuCameraMoveScript.cs" />
+    <Compile Include="Assets\Scripts\Menu Script\MenuScript.cs" />
     <Compile Include="Assets\Scripts\WinScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
