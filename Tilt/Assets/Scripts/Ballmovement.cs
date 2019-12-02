@@ -29,6 +29,9 @@ public class Ballmovement : MonoBehaviour
 
     public bool done;
 
+    [SerializeField]
+    private Endgame endgame;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,14 +49,10 @@ public class Ballmovement : MonoBehaviour
 
         rb.AddForce(movement * speed);
 
-        if(this.transform.position.y < -10)
-        {
-            LoadLoseScreen();
-        }
-
         if(score == 28)
         {
-            LoadWinScreen();
+            endgame.WinCanvas();
+            rb.constraints = RigidbodyConstraints.FreezeAll;
         }
 
         scoreText.text = "Score: " + score.ToString();
@@ -73,7 +72,12 @@ public class Ballmovement : MonoBehaviour
         {
             coinSource.Play();
             score++;
-        }                
+        }           
+        if (other.tag == "border")
+        {
+            endgame.LoseCanvas();
+            rb.constraints = RigidbodyConstraints.FreezeAll;
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -106,25 +110,4 @@ public class Ballmovement : MonoBehaviour
             rb.AddForce(new Vector3(2, 0, -2), ForceMode.Impulse);
         }      
     }
-
-    private void LoadLoseScreen()
-    {
-        SceneManager.LoadScene("LoseScene");
-    }
-
-    private void LoadWinScreen()
-    {
-        SceneManager.LoadScene("WinScene");
-    }
-    /*
-    // Update is called once per frame
-    void Update()
-    {
-        var up_and_down = Input.GetAxis("Vertical");
-        var left_and_right = Input.GetAxis("Horizontal");
-
-        this.transform.Translate(left_and_right * speed * Time.deltaTime, up_and_down * speed * Time.deltaTime, 0f);
-    }
-    */
-
 }

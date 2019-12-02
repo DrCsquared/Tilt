@@ -23,8 +23,7 @@ public class LevelMovement : MonoBehaviour
     [SerializeField]
     private Ballmovement ballmovement;
 
-    [SerializeField]
-    private Text test;
+    public bool paused;
 
     void Start()
     {
@@ -35,30 +34,31 @@ public class LevelMovement : MonoBehaviour
 
     void Update() // runs 60 fps or so
     {
-        if (flipping)
+        if (!paused)
         {
-            timer+= Time.deltaTime;
-            transform.rotation = Quaternion.Lerp(transform.rotation, flip, 1f * Time.deltaTime);
-            localRotation = transform.rotation;
-            if (timer > 3)
+            if (flipping)
             {
-                flipping = false;
-                timer = 0;
+                timer+= Time.deltaTime;
+                transform.rotation = Quaternion.Lerp(transform.rotation, flip, 1f * Time.deltaTime);
+                localRotation = transform.rotation;
+                if (timer > 3)
+                {
+                    flipping = false;
+                    timer = 0;
+                }
+                down = !down;
             }
-            down = !down;
+            else
+            {
+                // find speed based on delta
+                float curSpeed = Time.deltaTime * speed;
+                // first update the current rotation angles with input from acceleration axis
+                localRotation.z += -Input.acceleration.x * curSpeed;
+                localRotation.x += Input.acceleration.y * curSpeed;
+                // then rotate this object accordingly to the new angle
+                transform.rotation = localRotation;
+            }
         }
-        else
-        {
-            // find speed based on delta
-            float curSpeed = Time.deltaTime * speed;
-            // first update the current rotation angles with input from acceleration axis
-            localRotation.z += -Input.acceleration.x * curSpeed;
-            localRotation.x += Input.acceleration.y * curSpeed;
-            // then rotate this object accordingly to the new angle
-            transform.rotation = localRotation;
-            test.text = transform.rotation.ToString();
-        }
-
     }
 
     IEnumerator wait()
