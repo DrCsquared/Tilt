@@ -17,6 +17,8 @@ public class Ballmovement : MonoBehaviour
     [SerializeField]
     private int speed;
 
+    [SerializeField]
+    private LevelMovement levelMovement;
 
     private int score;
 
@@ -24,6 +26,8 @@ public class Ballmovement : MonoBehaviour
 
     [SerializeField]
     private Text scoreText;
+
+    public bool done;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +58,13 @@ public class Ballmovement : MonoBehaviour
 
         scoreText.text = "Score: " + score.ToString();
 
+        if (done)
+        {
+            rb.constraints = RigidbodyConstraints.None;
+            rb.AddForce(new Vector3(0, 15), ForceMode.Impulse);
+            done = false;
+        }
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -62,6 +73,21 @@ public class Ballmovement : MonoBehaviour
         {
             coinSource.Play();
             score++;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "StageFlip" && rb.constraints == RigidbodyConstraints.None)
+        {
+            if (transform.position.y < -.5f)
+            {
+                rb.constraints = RigidbodyConstraints.FreezeAll;
+                if (levelMovement != null)
+                {
+                    levelMovement.FlipStage();
+                }              
+            }
         }
     }
 
