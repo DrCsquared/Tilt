@@ -20,6 +20,8 @@ public class LevelMovement : MonoBehaviour
 
     private bool down;
 
+    private bool flipped;
+
     [SerializeField]
     private Ballmovement ballmovement;
 
@@ -30,6 +32,7 @@ public class LevelMovement : MonoBehaviour
     {
         // copy the rotation of the object itself into a buffer
         localRotation = transform.rotation;
+        flipped = false;
     }
 
 
@@ -43,20 +46,42 @@ public class LevelMovement : MonoBehaviour
             if (timer > 3)
             {
                 flipping = false;
+
+                flipped = !flipped;
                 timer = 0;
             }
             down = !down;
+
         }
         else
         {
-            // find speed based on delta
-            float curSpeed = Time.deltaTime * speed;
-            // first update the current rotation angles with input from acceleration axis
-            localRotation.z += -Input.acceleration.x * curSpeed;
-            localRotation.x += Input.acceleration.y * curSpeed;
-            // then rotate this object accordingly to the new angle
-            transform.rotation = localRotation;
-            test.text = transform.rotation.ToString();
+            if(!flipped)
+            {
+                // find speed based on delta
+                float curSpeed = Time.deltaTime * speed;
+                // first update the current rotation angles with input from acceleration axis
+                localRotation.z += -Input.acceleration.x * curSpeed;
+                localRotation.x += Input.acceleration.y * curSpeed;
+                // then rotate this object accordingly to the new angle
+                transform.rotation = localRotation;
+                test.text = transform.rotation.ToString();
+            }
+            else
+            {
+                // find speed based on delta
+                float curSpeed = Time.deltaTime * speed;
+                // first update the current rotation angles with input from acceleration axis
+                localRotation.y -= Input.acceleration.y * curSpeed;
+                localRotation.z -= Input.acceleration.x * curSpeed;
+                //Debug.Log("YOU RUNNING, ASKS SEAN");
+                //localRotation.x += -Input.acceleration.y * curSpeed;
+                // then rotate this object accordingly to the new angle
+                transform.rotation = localRotation;
+                test.text = transform.rotation.ToString();
+            }
+
+
+           
         }
 
     }
