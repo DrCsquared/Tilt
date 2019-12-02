@@ -210,7 +210,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &11425412
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -325,7 +325,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &20883894
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -567,7 +567,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &35802156
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -844,7 +844,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &51138599
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -953,7 +953,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &58657577
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1303,7 +1303,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &101198146
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1412,7 +1412,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &104097980
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1533,7 +1533,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &115623192
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1801,7 +1801,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &137965239
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1910,7 +1910,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &150412068
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2019,7 +2019,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &159809978
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2128,7 +2128,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &162907032
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2237,7 +2237,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &168024669
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2346,7 +2346,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &172684901
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2455,7 +2455,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &193975573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2921,7 +2921,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &217417643
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3144,7 +3144,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &225128251
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3776,7 +3776,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &257440370
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3885,7 +3885,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &261865570
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4354,7 +4354,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &337513797
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4463,7 +4463,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &338154098
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4691,7 +4691,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &353438000
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4933,7 +4933,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &381358313
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5084,7 +5084,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &418165859
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5242,7 +5242,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &442339258
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5357,7 +5357,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &460024936
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5466,7 +5466,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &461877086
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5575,7 +5575,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &466642475
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5817,7 +5817,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &491234492
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6118,7 +6118,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &556662692
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6227,7 +6227,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &573414037
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6493,7 +6493,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &575997548
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6602,7 +6602,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &582205761
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6717,7 +6717,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &595158504
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6826,7 +6826,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &595806751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6935,7 +6935,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &603004898
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7044,7 +7044,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &626979604
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7153,7 +7153,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &627488086
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7435,7 +7435,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &649561484
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7544,7 +7544,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &650111326
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7764,7 +7764,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &693947408
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8380,7 +8380,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &722454420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8545,7 +8545,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &746051913
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8816,7 +8816,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &771146758
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9232,7 +9232,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &859601033
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9341,7 +9341,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &861523444
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9764,7 +9764,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &883803444
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10085,7 +10085,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &972507361
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10321,7 +10321,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &979828960
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10630,7 +10630,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1065832419
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10739,7 +10739,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1068147838
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10848,7 +10848,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1073666583
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10957,7 +10957,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1074824411
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11066,7 +11066,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1078656481
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11181,7 +11181,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1103138912
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11290,7 +11290,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1106133061
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11484,7 +11484,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1120317527
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11593,7 +11593,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1121339054
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12166,7 +12166,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1221510148
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12275,7 +12275,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1226090883
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12511,7 +12511,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1285038762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12689,7 +12689,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1296598026
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12966,7 +12966,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1309032750
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13081,7 +13081,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1311712176
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13190,7 +13190,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1317430121
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13299,7 +13299,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1322602507
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13477,7 +13477,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1335240449
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13661,7 +13661,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1346104859
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13770,7 +13770,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1366951539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13879,7 +13879,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1375417923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14075,7 +14075,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1422389402
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14259,7 +14259,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1432049247
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14368,7 +14368,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1434652701
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14590,7 +14590,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1461167884
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14699,7 +14699,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1468349121
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14808,7 +14808,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1479066707
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14917,7 +14917,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1487456576
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15026,7 +15026,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1490069660
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15135,7 +15135,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1493738841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15244,7 +15244,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1510037943
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15353,7 +15353,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1514926524
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15597,7 +15597,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1536457567
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15825,7 +15825,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1570798134
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15981,7 +15981,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1583706661
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16216,15 +16216,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632479958}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.047409225, y: -0.005941392, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0008190557, w: 0.99999964}
+  m_LocalPosition: {x: 0.18986803, y: -0.06915841, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1022044387}
   - {fileID: 222189672}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.094000004}
 --- !u!82 &1632479960
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16235,9 +16235,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bdf6bd08aae88044fab258ea8fd814bf, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 65207d1a6b36cd647b325c763e0902f0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -16386,7 +16386,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &1632823733
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16495,7 +16495,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1652356851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16761,7 +16761,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1707580633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16945,7 +16945,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1715182088
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17183,7 +17183,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1731587556
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17292,7 +17292,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1740630669
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17401,7 +17401,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1748364077
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17685,7 +17685,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1778780462
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18238,7 +18238,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1867803199
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18416,7 +18416,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1891252302
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18670,7 +18670,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1913889390
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18779,7 +18779,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1917070561
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18888,7 +18888,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1917721660
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18997,7 +18997,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1933724353
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19147,7 +19147,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1978543993
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19256,7 +19256,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &1998871694
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19440,7 +19440,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &2013007207
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19656,7 +19656,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &2035359284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19765,7 +19765,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &2039749345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19874,7 +19874,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &2049082184
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20275,7 +20275,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &2067490737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20642,7 +20642,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 14
-  m_CollisionDetection: 0
+  m_CollisionDetection: 3
 --- !u!65 &2106982495
 BoxCollider:
   m_ObjectHideFlags: 0

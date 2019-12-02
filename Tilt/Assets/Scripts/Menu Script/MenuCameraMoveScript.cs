@@ -82,7 +82,7 @@ public class MenuCameraMoveScript : MonoBehaviour
             yield return new WaitForSeconds(waitTime);
             playerPreviewCanvas.enabled = true;
 
-            Debug.Log("Are you only doing this once?");
+            
        
     }
 }
