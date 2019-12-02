@@ -33,3 +33,13 @@ MonoBehaviour:
     m_Blend:
       m_Style: 1
       m_Time: 1.5
+  - m_From: PlayerSelectionCamera
+    m_To: PlayerPreviewCamera
+    m_Blend:
+      m_Style: 1
+      m_Time: 2
+  - m_From: PlayerPreviewCamera
+    m_To: PlayerSelectionCamera
+    m_Blend:
+      m_Style: 1
+      m_Time: 1.5
