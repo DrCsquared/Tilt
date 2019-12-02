@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Coin
   - StageFlip
+  - topleft
+  - topright
+  - bottomleft
+  - bottomright
   layers:
   - Default
   - TransparentFX

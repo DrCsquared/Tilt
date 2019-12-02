@@ -74,7 +74,6 @@ public class LevelMovement : MonoBehaviour
             zPos = transform.rotation.z - 360;
         }
         flip = Quaternion.Euler(0,0, zPos);
-        Debug.Log(zPos);
         flipping = true;
         StartCoroutine("wait");
     }

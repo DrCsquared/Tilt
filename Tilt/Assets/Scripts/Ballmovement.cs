@@ -73,7 +73,7 @@ public class Ballmovement : MonoBehaviour
         {
             coinSource.Play();
             score++;
-        }
+        }                
     }
 
     private void OnTriggerExit(Collider other)
@@ -86,9 +86,25 @@ public class Ballmovement : MonoBehaviour
                 if (levelMovement != null)
                 {
                     levelMovement.FlipStage();
-                }              
+                }
             }
         }
+        if (other.tag == "topleft" && transform.position.y > 0)
+        {
+            rb.AddForce(new Vector3(-2, 0, 2), ForceMode.Impulse);
+        }
+        else if (other.tag == "topright" && transform.position.y > 0)
+        {
+            rb.AddForce(new Vector3(2, 0, 2), ForceMode.Impulse);
+        }
+        else if (other.tag == "bottomleft" && transform.position.y > 0)
+        {
+            rb.AddForce(new Vector3(-2, 0, -2), ForceMode.Impulse);
+        }
+        else if (other.tag == "bottomright" && transform.position.y > 0)
+        {
+            rb.AddForce(new Vector3(2, 0, -2), ForceMode.Impulse);
+        }      
     }
 
     private void LoadLoseScreen()
