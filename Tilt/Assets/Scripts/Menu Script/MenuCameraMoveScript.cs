@@ -5,95 +5,84 @@ using Cinemachine;
 
 public class MenuCameraMoveScript : MonoBehaviour
 {
-    //[SerializeField]
-    //private List<CinemachineVirtualCamera> Cameras;
+    [SerializeField]
+    private List<CinemachineVirtualCamera> Cameras;
 
     [SerializeField]
-    private GameObject MainMenuCamera;
+    private Canvas playerPreviewCanvas;
+
+    private CinemachineVirtualCamera ActiveCamera;
 
     [SerializeField]
-    private GameObject LevelSelectionCamera;
-
-    [SerializeField]
-    private GameObject HighScoresCamera;
-
-    [SerializeField]
-    private GameObject PlayerSelectionCamera;
-
-    private GameObject ActiveCamera;
+    private GameObject playerPreviewButton;
 
     private void Start()
     {
-        MainMenuCamera.SetActive(true);
-        PlayerSelectionCamera.SetActive(false);
-        HighScoresCamera.SetActive(false);
-        LevelSelectionCamera.SetActive(false);
-        ActiveCamera = MainMenuCamera;
+
+        for(int i = 1; i < Cameras.Count; i++)
+        {
+            Cameras[i].enabled = false;
+        }
+        playerPreviewCanvas.enabled = false;
+        Cameras[0].enabled = true;
+        
+        
+        ActiveCamera = Cameras[0];
     }
-
-
-    //public void cameraMoveToLevelSide()
-    //{
-    //    Cameras[0].enabled = false;
-    //    Cameras[1].enabled = true;
-    //    ActiveCamera = Cameras[1];
-    //}
-
-    //public void cameraBack()
-    //{
-    //    ActiveCamera.enabled = false;
-    //    Cameras[0].enabled = true;
-    //    ActiveCamera = Cameras[0];
-    //}
-
-    //public void cameraMoveToPlayerSelectSide()
-    //{
-    //    Cameras[0].enabled = false;
-    //    Cameras[3].enabled = true;
-    //    ActiveCamera = Cameras[3];
-    //}
-    //public void cameraMoveToHighScoreSide()
-    //{
-    //    Cameras[0].enabled = false;
-    //    Cameras[2].enabled = true;
-    //    ActiveCamera = Cameras[2];
-    //}
 
 
     public void cameraMoveToLevelSide()
     {
-        MainMenuCamera.SetActive(false);
-        PlayerSelectionCamera.SetActive(false);
-        HighScoresCamera.SetActive(false);
-        LevelSelectionCamera.SetActive(true);
-        ActiveCamera = LevelSelectionCamera;
+        Cameras[0].enabled = false;
+        Cameras[1].enabled = true;
+        ActiveCamera = Cameras[1];
     }
 
     public void cameraBack()
     {
-        ActiveCamera.SetActive(false);
-        MainMenuCamera.SetActive(true);
-        ActiveCamera = MainMenuCamera;
+        ActiveCamera.enabled = false;
+        Cameras[0].enabled = true;
+        playerPreviewCanvas.enabled = false;
+        ActiveCamera = Cameras[0];
     }
 
     public void cameraMoveToPlayerSelectSide()
     {
-       
-        MainMenuCamera.SetActive(false);
-        LevelSelectionCamera.SetActive(false);
-        HighScoresCamera.SetActive(false);
-        PlayerSelectionCamera.SetActive(true);
-        ActiveCamera = PlayerSelectionCamera;
+        playerPreviewCanvas.enabled = false;
+        if (Cameras[4].enabled == true)
+        {
+            playerPreviewButton.SetActive(false);
+            Cameras[4].enabled = false;
+        }
+        if (Cameras[0].enabled == true)
+        {
+            Cameras[0].enabled = false;
+        }
+        Cameras[3].enabled = true;
+        ActiveCamera = Cameras[3];
     }
     public void cameraMoveToHighScoreSide()
     {
-
-        MainMenuCamera.SetActive(false);
-        LevelSelectionCamera.SetActive(false);
-        PlayerSelectionCamera.SetActive(false);
-        HighScoresCamera.SetActive(true);
-        
-        ActiveCamera = HighScoresCamera;
+        Cameras[0].enabled = false;
+        Cameras[2].enabled = true;
+        ActiveCamera = Cameras[2];
     }
 
+    public void cameraMoveToPlayerPreviewSide()
+    {
+        Cameras[0].enabled = false;
+        Cameras[4].enabled = true;
+        ActiveCamera = Cameras[4];
+
+        StartCoroutine(Wait(2.5f));
+    }
+
+    private IEnumerator Wait(float waitTime)
+    {
+            yield return new WaitForSeconds(waitTime);
+            playerPreviewCanvas.enabled = true;
+
+            Debug.Log("Are you only doing this once?");
+       
+    }
 }
