@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelMovement : MonoBehaviour
 {
@@ -21,6 +22,9 @@ public class LevelMovement : MonoBehaviour
 
     [SerializeField]
     private Ballmovement ballmovement;
+
+    [SerializeField]
+    private Text test;
 
     void Start()
     {
@@ -48,11 +52,11 @@ public class LevelMovement : MonoBehaviour
             // find speed based on delta
             float curSpeed = Time.deltaTime * speed;
             // first update the current rotation angles with input from acceleration axis
-            localRotation.y += Input.acceleration.x * curSpeed;
+            localRotation.z += -Input.acceleration.x * curSpeed;
             localRotation.x += Input.acceleration.y * curSpeed;
-
             // then rotate this object accordingly to the new angle
-            this.transform.rotation = localRotation;
+            transform.rotation = localRotation;
+            test.text = transform.rotation.ToString();
         }
 
     }
