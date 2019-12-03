@@ -127,11 +127,9 @@
     <Compile Include="Assets\Scripts\Ballmovement.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CoinScript.cs" />
-<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Endgame.cs" />
-=======
     <Compile Include="Assets\Scripts\Level 2 Scripts\SwitchCamera.cs" />
->>>>>>> 527cad980abcc1dc1dbb2387815536e46c3fa343
+    <Compile Include="Assets\Scripts\Level 2 Scripts\Tunnel.cs" />
     <Compile Include="Assets\Scripts\LevelMovement.cs" />
     <Compile Include="Assets\Scripts\Menu Script\MenuCameraMoveScript.cs" />
     <Compile Include="Assets\Scripts\Menu Script\MenuScript.cs" />
