@@ -2,12 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.UI;
 
 public class SwitchCamera : MonoBehaviour
 {
 
     [SerializeField]
     private List<CinemachineVirtualCamera> Cameras;
+
+    [SerializeField]
+    private GameObject middle;
+
+    [SerializeField]
+    private GameObject Tunnel;
+
+    [SerializeField]
+    private Ballmovement ballScript;
+
+    [SerializeField]
+    private Text scoreText;
+
+    [SerializeField]
+    private GameObject Level1;
+
+    [SerializeField]
+    private GameObject Level2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +40,12 @@ public class SwitchCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        if (ballScript.score == 10)
+        {
+            middle.SetActive(false);
+        }
+
     }
 
     public void OnTriggerEnter(Collider other)
@@ -28,6 +53,10 @@ public class SwitchCamera : MonoBehaviour
         if (other.tag == "Player")
         {
             this.GetComponent<BoxCollider>().enabled = false;
+
+            Tunnel.SetActive(true);
+            Level1.SetActive(false);
+
 
             Cameras[0].enabled = false;
             Cameras[1].enabled = true;

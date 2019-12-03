@@ -131,6 +131,10 @@
     <Compile Include="Assets\Scripts\CoinScript.cs" />
     <Compile Include="Assets\Scripts\Endgame.cs" />
     <Compile Include="Assets\Scripts\Level 2 Scripts\SwitchCamera.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Scripts\Level 2 Scripts\Tunnel.cs" />
+>>>>>>> aca30f48a5cbaf51bce851e4c6535191f5e0251d
     <Compile Include="Assets\Scripts\LevelMovement.cs" />
     <Compile Include="Assets\Scripts\Menu Script\MenuCameraMoveScript.cs" />
     <Compile Include="Assets\Scripts\Menu Script\MenuScript.cs" />

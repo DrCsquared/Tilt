@@ -20,7 +20,7 @@ public class Ballmovement : MonoBehaviour
     [SerializeField]
     private LevelMovement levelMovement;
 
-    private int score;
+    public int score;
 
     private Rigidbody rb;
 
@@ -49,7 +49,7 @@ public class Ballmovement : MonoBehaviour
 
         rb.AddForce(movement * speed);
 
-        if(score == 28)
+        if(score == 280)
         {
             endgame.WinCanvas();
             rb.constraints = RigidbodyConstraints.FreezeAll;
@@ -71,8 +71,8 @@ public class Ballmovement : MonoBehaviour
         if(other.tag == "Coin")
         {
             coinSource.Play();
-            score++;
-        }
+            score+= 10;
+        }           
         if (other.tag == "border")
         {
             endgame.LoseCanvas();
@@ -108,6 +108,6 @@ public class Ballmovement : MonoBehaviour
         else if (other.tag == "bottomright" && transform.position.y > 0)
         {
             rb.AddForce(new Vector3(2, 0, -2), ForceMode.Impulse);
-        }      
+        }
     }
 }
