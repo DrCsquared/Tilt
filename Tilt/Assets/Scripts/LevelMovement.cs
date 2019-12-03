@@ -33,7 +33,7 @@ public class LevelMovement : MonoBehaviour
 
 
     void Update() // runs 60 fps or so
-    {
+    {        
         if (!paused)
         {
             if (flipping)

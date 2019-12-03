@@ -11,6 +11,12 @@ TagManager:
   - bottomleft
   - bottomright
   - border
+  - top
+  - bottom
+  - left
+  - right
+  - front
+  - back
   layers:
   - Default
   - TransparentFX

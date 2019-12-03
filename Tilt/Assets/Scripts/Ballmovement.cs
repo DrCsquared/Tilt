@@ -72,7 +72,7 @@ public class Ballmovement : MonoBehaviour
         {
             coinSource.Play();
             score++;
-        }           
+        }
         if (other.tag == "border")
         {
             endgame.LoseCanvas();
