@@ -20,6 +20,9 @@ public class Ballmovement : MonoBehaviour
     [SerializeField]
     private LevelMovement levelMovement;
 
+    [SerializeField]
+    private Camera mainCamera;
+
     public int score;
 
     private Rigidbody rb;
@@ -29,15 +32,29 @@ public class Ballmovement : MonoBehaviour
 
     public bool done;
 
+    //private Color StartingColor;
+    //private Color EndingColor;
+
+    [SerializeField]
+    private List<Material> Skyboxes;
+
     [SerializeField]
     private Endgame endgame;
+
+    private float lerpTime = 1.0f;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        RenderSettings.skybox = Skyboxes[0];
         rb = GetComponent<Rigidbody>();
         coinSource.clip = coinSound;
         score = 0;
+
+       // StartingColor = RenderSettings.skybox.GetColor("_Tint");
+        //  EndingColor = Color.red;
+
     }
 
     void FixedUpdate()
@@ -49,7 +66,14 @@ public class Ballmovement : MonoBehaviour
 
         rb.AddForce(movement * speed);
 
-        if(score == 280)
+        if(score == 10)
+        {
+            RenderSettings.skybox = Skyboxes[1];
+   
+            //RenderSettings.skybox.SetColor("_Tint", Color.Lerp(StartingColor, EndingColor, Time.deltaTime * lerpTime));
+
+        }
+        if(score == 460)
         {
             endgame.WinCanvas();
             rb.constraints = RigidbodyConstraints.FreezeAll;

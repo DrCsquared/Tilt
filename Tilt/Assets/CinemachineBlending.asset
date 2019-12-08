@@ -16,7 +16,7 @@ MonoBehaviour:
   - m_From: MainMenuCamera
     m_To: '**ANY CAMERA**'
     m_Blend:
-      m_Style: 4
+      m_Style: 1
       m_Time: 2
   - m_From: PlayerSelectionCamera
     m_To: MainMenuCamera
@@ -40,6 +40,11 @@ MonoBehaviour:
       m_Time: 2
   - m_From: PlayerPreviewCamera
     m_To: PlayerSelectionCamera
+    m_Blend:
+      m_Style: 1
+      m_Time: 1.5
+  - m_From: CreditMenuCamera
+    m_To: MainMenuCamera
     m_Blend:
       m_Style: 1
       m_Time: 1.5

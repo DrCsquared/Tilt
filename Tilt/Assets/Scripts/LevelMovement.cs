@@ -21,6 +21,9 @@ public class LevelMovement : MonoBehaviour
     private bool down;
 
     [SerializeField]
+    private GameObject Level;
+
+    [SerializeField]
     private Ballmovement ballmovement;
 
     public bool paused;
@@ -39,7 +42,7 @@ public class LevelMovement : MonoBehaviour
             if (flipping)
             {
                 timer+= Time.deltaTime;
-                transform.rotation = Quaternion.Lerp(transform.rotation, flip, 1f * Time.deltaTime);
+                Level.transform.rotation = Quaternion.Lerp(Level.transform.rotation, flip, 1f * Time.deltaTime);
                 localRotation = transform.rotation;
                 if (timer > 3)
                 {
@@ -71,15 +74,16 @@ public class LevelMovement : MonoBehaviour
     {
         if (!down)
         {
-            zPos = transform.rotation.z - 180;
+            zPos = Level.transform.rotation.z - 180;
         }
         else if (down)
         {
-            zPos = transform.rotation.z - 360;
+            zPos = Level.transform.rotation.z - 360;
         }
         flip = Quaternion.Euler(0,0, zPos);
         flipping = true;
         StartCoroutine("wait");
+        
     }
 
 }
