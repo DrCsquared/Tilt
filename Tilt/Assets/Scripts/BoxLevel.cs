@@ -18,12 +18,16 @@ public class BoxLevel : MonoBehaviour
     private GameObject front;
     [SerializeField]
     private GameObject back;
+    
+    private GameObject current;
 
     // Start is called before the first frame update
     void Start()
     {
-        level.transform.SetParent(top.transform);
+        top.transform.parent = null;
+        level.transform.parent = top.transform;
         top.GetComponent<LevelMovement>().enabled = true;
+        current = top;
     }
 
     // Update is called once per frame
@@ -34,32 +38,44 @@ public class BoxLevel : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag =="top")
+        if (other.tag =="top" && current != top)
         {
-            level.transform.SetParent(null);
-            level.transform.SetParent(top.transform);
+            level.transform.parent = null;
+            current.transform.parent = level.transform;
+            current.gameObject.GetComponent<LevelMovement>().enabled = false;
+            top.transform.parent = null;
+            level.transform.parent = top.transform;
+            current = top;
+            top.GetComponent<LevelMovement>().enabled = true;
         }
-        if (other.tag == "bottom")
+        if (other.tag == "bottom" && current != bottom)
         {
             level.transform.SetParent(null);
             level.transform.SetParent(bottom.transform);
         }
-        if (other.tag == "right")
+        if (other.tag == "right" && current != right)
         {
-            level.transform.SetParent(null);
-            level.transform.SetParent(right.transform); 
+            Debug.Log(transform.parent);
+            level.transform.parent = null;
+            Debug.Log(transform.parent);
+            current.transform.parent = level.transform;
+            current.gameObject.GetComponent<LevelMovement>().enabled = false;
+            right.transform.parent = null;
+            level.transform.parent = right.transform;
+            current = right;
+            right.GetComponent<LevelMovement>().enabled = true;
         }
-        if (other.tag == "left")
+        if (other.tag == "left" && current != left)
         {
             level.transform.SetParent(null, true);
             level.transform.SetParent(left.transform);
         }
-        if (other.tag == "front")
+        if (other.tag == "front" && current != front)
         {
             level.transform.SetParent(null, true);
             level.transform.SetParent(front.transform);
         }
-        if (other.tag == "back")
+        if (other.tag == "back" && current != back)
         {
             level.transform.SetParent(null, true);
             level.transform.SetParent(back.transform);
