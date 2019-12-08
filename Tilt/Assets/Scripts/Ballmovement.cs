@@ -40,10 +40,15 @@ public class Ballmovement : MonoBehaviour
 
     private float lerpTime = 1.0f;
 
+    [SerializeField]
+    List<GameObject> teleporters = new List<GameObject>();
+
+    private float timer;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        Debug.Log(teleporters.Count);
         RenderSettings.skybox = Skyboxes[0];
         rb = GetComponent<Rigidbody>();
         coinSource.clip = coinSound;
@@ -56,6 +61,8 @@ public class Ballmovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        timer += Time.deltaTime;
+
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
 
@@ -98,6 +105,21 @@ public class Ballmovement : MonoBehaviour
         {
             endgame.LoseCanvas();
             rb.constraints = RigidbodyConstraints.FreezeAll;
+        }
+        if (other.tag == "teleporter" && timer > .2)
+        {
+            timer = 0;
+            int newtele = Random.Range(0,teleporters.Count);
+            if (newtele < 4 && (other.gameObject.name == "Teleporter" || other.gameObject.name == "Teleporter (1)" || other.gameObject.name == "Teleporter (2)" || other.gameObject.name == "Teleporter (3)"))
+            {
+                newtele = Random.Range(4,teleporters.Count);
+            }
+            while (teleporters[newtele].gameObject.transform == other.transform)
+            {
+                newtele = Random.Range(0, teleporters.Count);
+            }
+            transform.position = teleporters[newtele].transform.position;
+            transform.position += new Vector3 (0,.2f);
         }
     }
 

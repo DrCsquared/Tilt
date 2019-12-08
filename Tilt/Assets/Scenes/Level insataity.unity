@@ -1232,14 +1232,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.1
   flipping: 0
+  Level: {fileID: 0}
   ballmovement: {fileID: 722454420}
   paused: 0
-  top: {fileID: 287275584}
-  bottom: {fileID: 595220933}
-  left: {fileID: 959213075}
-  right: {fileID: 374486990}
-  front: {fileID: 179696415}
-  back: {fileID: 578489629}
 --- !u!82 &94843806
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2789,14 +2784,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.1
   flipping: 0
+  Level: {fileID: 0}
   ballmovement: {fileID: 722454420}
   paused: 0
-  top: {fileID: 287275584}
-  bottom: {fileID: 595220933}
-  left: {fileID: 959213075}
-  right: {fileID: 374486990}
-  front: {fileID: 179696415}
-  back: {fileID: 578489629}
 --- !u!4 &179696417
 Transform:
   m_ObjectHideFlags: 0
@@ -4613,14 +4603,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.1
   flipping: 0
+  Level: {fileID: 0}
   ballmovement: {fileID: 722454420}
   paused: 0
-  top: {fileID: 287275584}
-  bottom: {fileID: 595220933}
-  left: {fileID: 959213075}
-  right: {fileID: 374486990}
-  front: {fileID: 179696415}
-  back: {fileID: 578489629}
 --- !u!4 &287275586
 Transform:
   m_ObjectHideFlags: 0
@@ -5391,14 +5376,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.1
   flipping: 0
+  Level: {fileID: 0}
   ballmovement: {fileID: 722454420}
   paused: 0
-  top: {fileID: 287275584}
-  bottom: {fileID: 595220933}
-  left: {fileID: 959213075}
-  right: {fileID: 374486990}
-  front: {fileID: 179696415}
-  back: {fileID: 578489629}
 --- !u!4 &374486992
 Transform:
   m_ObjectHideFlags: 0
@@ -7210,14 +7190,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.1
   flipping: 0
+  Level: {fileID: 0}
   ballmovement: {fileID: 722454420}
   paused: 0
-  top: {fileID: 287275584}
-  bottom: {fileID: 595220933}
-  left: {fileID: 959213075}
-  right: {fileID: 374486990}
-  front: {fileID: 179696415}
-  back: {fileID: 578489629}
 --- !u!4 &578489631
 Transform:
   m_ObjectHideFlags: 0
@@ -7499,14 +7474,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.1
   flipping: 0
+  Level: {fileID: 0}
   ballmovement: {fileID: 722454420}
   paused: 0
-  top: {fileID: 287275584}
-  bottom: {fileID: 595220933}
-  left: {fileID: 959213075}
-  right: {fileID: 374486990}
-  front: {fileID: 179696415}
-  back: {fileID: 578489629}
 --- !u!4 &595220935
 Transform:
   m_ObjectHideFlags: 0
@@ -9289,7 +9259,9 @@ MonoBehaviour:
   score: 0
   scoreText: {fileID: 2081730312}
   done: 0
+  Skyboxes: []
   endgame: {fileID: 746309656}
+  teleporters: []
 --- !u!82 &722454421
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9663,8 +9635,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746309651}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.31130058, y: 0, z: 0, w: 0.95031154}
+  m_LocalPosition: {x: 0, y: 67.04163, z: -20.154598}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -11139,14 +11111,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.1
   flipping: 0
+  Level: {fileID: 0}
   ballmovement: {fileID: 722454420}
   paused: 0
-  top: {fileID: 287275584}
-  bottom: {fileID: 595220933}
-  left: {fileID: 959213075}
-  right: {fileID: 374486990}
-  front: {fileID: 179696415}
-  back: {fileID: 578489629}
 --- !u!4 &959213077
 Transform:
   m_ObjectHideFlags: 0
@@ -18172,14 +18139,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   flipping: 0
+  Level: {fileID: 0}
   ballmovement: {fileID: 722454420}
   paused: 0
-  top: {fileID: 0}
-  bottom: {fileID: 0}
-  left: {fileID: 0}
-  right: {fileID: 0}
-  front: {fileID: 0}
-  back: {fileID: 0}
 --- !u!1 &1632823730
 GameObject:
   m_ObjectHideFlags: 0
@@ -19537,15 +19499,15 @@ RectTransform:
   m_GameObject: {fileID: 1757728912}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1766841451}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 500, y: 220}
-  m_SizeDelta: {x: 62.41, y: 62.13}
+  m_AnchoredPosition: {x: 450, y: 200}
+  m_SizeDelta: {x: 62, y: 62}
   m_Pivot: {x: 1, y: 1}
 --- !u!1 &1766841450
 GameObject:

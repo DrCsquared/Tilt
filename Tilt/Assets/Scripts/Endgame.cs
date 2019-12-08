@@ -54,6 +54,11 @@ public class Endgame : MonoBehaviour
         level.paused = false;
     }
 
+    public void Click_Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
     public void WinCanvas()
     {
         score.SetActive(false);

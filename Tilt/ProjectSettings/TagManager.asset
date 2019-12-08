@@ -6,17 +6,8 @@ TagManager:
   tags:
   - Coin
   - StageFlip
-  - topleft
-  - topright
-  - bottomleft
-  - bottomright
   - border
-  - top
-  - bottom
-  - left
-  - right
-  - front
-  - back
+  - teleporter
   layers:
   - Default
   - TransparentFX
