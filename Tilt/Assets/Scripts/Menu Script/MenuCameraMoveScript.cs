@@ -76,6 +76,12 @@ public class MenuCameraMoveScript : MonoBehaviour
 
         StartCoroutine(Wait(2.5f));
     }
+    public void cameraMoveToCreditSide()
+    {
+        Cameras[0].enabled = false;
+        Cameras[5].enabled = true;
+        ActiveCamera = Cameras[5];
+    }
 
     private IEnumerator Wait(float waitTime)
     {
@@ -85,4 +91,5 @@ public class MenuCameraMoveScript : MonoBehaviour
             
        
     }
+    
 }
