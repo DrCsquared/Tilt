@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 2bd8959f5fbd3644aa33af1a155fc147, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -6589,6 +6589,9 @@ MonoBehaviour:
   score: 0
   scoreText: {fileID: 2081730312}
   done: 0
+  Skyboxes:
+  - {fileID: 2100000, guid: 2bd8959f5fbd3644aa33af1a155fc147, type: 2}
+  - {fileID: 2100000, guid: 42ec241c8ce7f3f4caf4489c1e5c1a15, type: 2}
   endgame: {fileID: 746309656}
 --- !u!82 &722454421
 AudioSource:
@@ -6698,7 +6701,6 @@ GameObject:
   - component: {fileID: 746309653}
   - component: {fileID: 746309652}
   - component: {fileID: 746309655}
-  - component: {fileID: 746309657}
   - component: {fileID: 746309658}
   - component: {fileID: 746309656}
   m_Layer: 0
@@ -6766,8 +6768,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746309651}
-  m_LocalRotation: {x: 0.31130058, y: 0, z: 0, w: 0.95031154}
-  m_LocalPosition: {x: -0.6, y: 19.791626, z: -22.554596}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6808,15 +6810,6 @@ MonoBehaviour:
   pause: {fileID: 1757728912}
   playerRb: {fileID: 722454419}
   level: {fileID: 1632479961}
---- !u!45 &746309657
-Skybox:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746309651}
-  m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: 2bd8959f5fbd3644aa33af1a155fc147, type: 2}
 --- !u!114 &746309658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6837,7 +6830,7 @@ MonoBehaviour:
   m_DefaultBlend:
     m_Style: 1
     m_Time: 2
-  m_CustomBlends: {fileID: 11400000, guid: cc9b72c1f7274824687f7d9ddd4cdbc1, type: 2}
+  m_CustomBlends: {fileID: 0}
   m_CameraCutEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -12463,6 +12456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   flipping: 0
+  Level: {fileID: 1632479958}
   ballmovement: {fileID: 722454420}
   paused: 0
 --- !u!1 &1632823730

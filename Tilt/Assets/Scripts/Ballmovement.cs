@@ -20,9 +20,6 @@ public class Ballmovement : MonoBehaviour
     [SerializeField]
     private LevelMovement levelMovement;
 
-    [SerializeField]
-    private Camera mainCamera;
-
     public int score;
 
     private Rigidbody rb;
