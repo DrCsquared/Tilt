@@ -16,11 +16,7 @@ MonoBehaviour:
   - m_From: MainMenuCamera
     m_To: '**ANY CAMERA**'
     m_Blend:
-<<<<<<< HEAD
-      m_Style: 6
-=======
       m_Style: 1
->>>>>>> 013a5ac624f70bb4c6b6c6b2730b40fdb47edd03
       m_Time: 2
   - m_From: PlayerSelectionCamera
     m_To: MainMenuCamera
