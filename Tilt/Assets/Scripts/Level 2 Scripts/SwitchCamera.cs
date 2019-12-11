@@ -20,13 +20,7 @@ public class SwitchCamera : MonoBehaviour
     private Ballmovement ballScript;
 
     [SerializeField]
-    private Text scoreText;
-
-    [SerializeField]
     private GameObject Level1;
-
-    [SerializeField]
-    private GameObject Level2;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +28,8 @@ public class SwitchCamera : MonoBehaviour
         
         Cameras[0].enabled = true;
         Cameras[1].enabled = false;
+        Cameras[2].enabled = false;
+        
 
     }
 

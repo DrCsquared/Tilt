@@ -129,8 +129,11 @@
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CoinScript.cs" />
     <Compile Include="Assets\Scripts\Endgame.cs" />
+    <Compile Include="Assets\Scripts\Level 2 Scripts\Level2Part2CameraSwitch.cs" />
+    <Compile Include="Assets\Scripts\Level 2 Scripts\Level2Part2Rotate.cs" />
     <Compile Include="Assets\Scripts\Level 2 Scripts\SwitchCamera.cs" />
     <Compile Include="Assets\Scripts\Level 2 Scripts\Tunnel.cs" />
+    <Compile Include="Assets\Scripts\Level 2 Scripts\TunnelCameraSwitch.cs" />
     <Compile Include="Assets\Scripts\LevelMovement.cs" />
     <Compile Include="Assets\Scripts\Menu Script\LevelTimes.cs" />
     <Compile Include="Assets\Scripts\Menu Script\MenuCameraMoveScript.cs" />
