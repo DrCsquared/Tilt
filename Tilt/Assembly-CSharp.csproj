@@ -132,6 +132,7 @@
     <Compile Include="Assets\Scripts\Level 2 Scripts\SwitchCamera.cs" />
     <Compile Include="Assets\Scripts\Level 2 Scripts\Tunnel.cs" />
     <Compile Include="Assets\Scripts\LevelMovement.cs" />
+    <Compile Include="Assets\Scripts\Menu Script\LevelTimes.cs" />
     <Compile Include="Assets\Scripts\Menu Script\MenuCameraMoveScript.cs" />
     <Compile Include="Assets\Scripts\Menu Script\MenuScript.cs" />
     <Compile Include="Assets\Scripts\Menu Script\PlayerModel.cs" />

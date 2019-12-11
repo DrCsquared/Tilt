@@ -24,9 +24,6 @@ public class Ballmovement : MonoBehaviour
 
     private Rigidbody rb;
 
-    [SerializeField]
-    private Text scoreText;
-
     public bool done;
 
     //private Color StartingColor;
@@ -58,7 +55,7 @@ public class Ballmovement : MonoBehaviour
 
         this.gameObject.GetComponent<MeshRenderer>().material = BallMaterials[BallMaterial];
         
-        Debug.Log(teleporters.Count);
+
         RenderSettings.skybox = Skyboxes[0];
         rb = GetComponent<Rigidbody>();
         coinSource.clip = coinSound;
@@ -92,8 +89,6 @@ public class Ballmovement : MonoBehaviour
             endgame.WinCanvas();
             rb.constraints = RigidbodyConstraints.FreezeAll;
         }
-
-        scoreText.text = "Score: " + score.ToString();
 
         if (done)
         {
