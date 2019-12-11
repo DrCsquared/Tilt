@@ -12,10 +12,14 @@ public class PlayerSelection : MonoBehaviour
     private GameObject playerSpawnPoint;
 
     [SerializeField]
+    private List<Material> playerMaterials;
+
+    [SerializeField]
     private GameObject previewButton;
 
     private void Start()
     {
+        PlayerPrefs.SetInt("BallMaterial", 0);
         previewButton.SetActive(false);
     }
 
@@ -27,6 +31,7 @@ public class PlayerSelection : MonoBehaviour
             {
                 if (i == 0)
                 {
+                    PlayerPrefs.SetInt("BallMaterial", i);
                     playersList[i].SetActive(true);
                 }
                 else
@@ -43,6 +48,7 @@ public class PlayerSelection : MonoBehaviour
             {
                 if (i == 1)
                 {
+                    PlayerPrefs.SetInt("BallMaterial", i);
                     playersList[i].SetActive(true);
                 }
                 else
@@ -59,6 +65,7 @@ public class PlayerSelection : MonoBehaviour
             {
                 if (i == 2)
                 {
+                    PlayerPrefs.SetInt("BallMaterial", i);
                     playersList[i].SetActive(true);
                 }
                 else
@@ -75,6 +82,7 @@ public class PlayerSelection : MonoBehaviour
             {
                 if (i == 3)
                 {
+                    PlayerPrefs.SetInt("BallMaterial", i);
                     playersList[i].SetActive(true);
                 }
                 else
@@ -92,6 +100,7 @@ public class PlayerSelection : MonoBehaviour
                 if (i == 4
 )
                 {
+                    PlayerPrefs.SetInt("BallMaterial", i);
                     playersList[i].SetActive(true);
                 }
                 else
@@ -108,6 +117,7 @@ public class PlayerSelection : MonoBehaviour
             {
                 if (i == 5)
                 {
+                    PlayerPrefs.SetInt("BallMaterial", i);
                     playersList[i].SetActive(true);
                 }
                 else
@@ -124,6 +134,7 @@ public class PlayerSelection : MonoBehaviour
             {
                 if (i == 6)
                 {
+                    PlayerPrefs.SetInt("BallMaterial", i);
                     playersList[i].SetActive(true);
                 }
                 else
@@ -140,6 +151,7 @@ public class PlayerSelection : MonoBehaviour
             {
                 if (i == 7)
                 {
+                    PlayerPrefs.SetInt("BallMaterial", i);
                     playersList[i].SetActive(true);
                 }
                 else
@@ -156,6 +168,7 @@ public class PlayerSelection : MonoBehaviour
             {
                 if (i == 8)
                 {
+                    PlayerPrefs.SetInt("BallMaterial", i);
                     playersList[i].SetActive(true);
                 }
                 else
@@ -172,7 +185,9 @@ public class PlayerSelection : MonoBehaviour
             {
                 if (i == 9)
                 {
+                    PlayerPrefs.SetInt("BallMaterial", i);
                     playersList[i].SetActive(true);
+
                 }
                 else
                     playersList[i].SetActive(false);

@@ -38,16 +38,26 @@ public class Ballmovement : MonoBehaviour
     [SerializeField]
     private Endgame endgame;
 
+    [SerializeField]
+    private List<Material> BallMaterials;
+
     private float lerpTime = 1.0f;
 
     [SerializeField]
     List<GameObject> teleporters = new List<GameObject>();
+
+    private int BallMaterial;
 
     private float timer;
 
     // Start is called before the first frame update
     void Start()
     {
+        
+        BallMaterial = PlayerPrefs.GetInt("BallMaterial", 0);
+
+        this.gameObject.GetComponent<MeshRenderer>().material = BallMaterials[BallMaterial];
+        
         Debug.Log(teleporters.Count);
         RenderSettings.skybox = Skyboxes[0];
         rb = GetComponent<Rigidbody>();
@@ -70,7 +80,7 @@ public class Ballmovement : MonoBehaviour
 
         rb.AddForce(movement * speed);
 
-        if(score == 10)
+        if(score == 400)
         {
             RenderSettings.skybox = Skyboxes[1];
    
