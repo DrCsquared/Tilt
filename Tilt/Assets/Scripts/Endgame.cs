@@ -98,7 +98,7 @@ public class Endgame : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Level 1")
         {
-            if (time < PlayerPrefs.GetFloat("Level 1", 0))
+            if (time < PlayerPrefs.GetFloat("Level 1", 3540))
             {
                 PlayerPrefs.SetFloat("Level 1", time);
             }
@@ -106,7 +106,7 @@ public class Endgame : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Level 2")
         {
-            if (time < PlayerPrefs.GetFloat("Level 2", 0))
+            if (time < PlayerPrefs.GetFloat("Level 2", 3540))
             {
                 PlayerPrefs.SetFloat("Level 2", time);
             }
@@ -114,7 +114,7 @@ public class Endgame : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Level 3")
         {
-            if (time < PlayerPrefs.GetFloat("Level 3", 0))
+            if (time < PlayerPrefs.GetFloat("Level 3", 3540))
             {
                 PlayerPrefs.SetFloat("Level 3", time);
             }
@@ -122,9 +122,17 @@ public class Endgame : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Level 4")
         {
-            if (time < PlayerPrefs.GetFloat("Level 4", 0))
+            if (time < PlayerPrefs.GetFloat("Level 4", 3540))
             {
                 PlayerPrefs.SetFloat("Level 4", time);
+            }
+        }
+
+        if (SceneManager.GetActiveScene().name == "Level 5")
+        {
+            if (time < PlayerPrefs.GetFloat("Level 5", 3540))
+            {
+                PlayerPrefs.SetFloat("Level 5", time);
             }
         }
     }

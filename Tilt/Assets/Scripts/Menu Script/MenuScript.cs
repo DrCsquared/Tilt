@@ -26,6 +26,11 @@ public class MenuScript : MonoBehaviour
         SceneManager.LoadScene("Level 4");
     }
 
+    public void LoadLevel5()
+    {
+        SceneManager.LoadScene("Level 5");
+    }
+
     public void Click_Exit()
     {
         Application.Quit();
