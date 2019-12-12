@@ -73,6 +73,12 @@ public class LevelMovement : MonoBehaviour
             }
             else if (!frozen)
             {
+                if (joy.activeInHierarchy || threshold.activeInHierarchy)
+                {
+                    drag = false;
+                    joy.SetActive(false);
+                    threshold.SetActive(false);
+                }
                 // find speed based on delta
                 float curSpeed = Time.deltaTime * speed;
                 // first update the current rotation angles with input from acceleration axis

@@ -75,7 +75,9 @@ public class Ballmovement : MonoBehaviour
         coinSource.clip = coinSound;
         score = 0;
 
-       // StartingColor = RenderSettings.skybox.GetColor("_Tint");
+        jCount.GetComponent<TextMeshProUGUI>().text = powerups.jumpPowerup.ToString();
+        fCount.GetComponent<TextMeshProUGUI>().text = powerups.freezePowerup.ToString();
+        // StartingColor = RenderSettings.skybox.GetColor("_Tint");
         //  EndingColor = Color.red;
 
     }
@@ -154,14 +156,14 @@ public class Ballmovement : MonoBehaviour
         {
             coinSource.Play();
             powerups.jumpPowerup++;
-            jCount.GetComponent<TextMeshPro>().text = powerups.jumpPowerup.ToString();
+            jCount.GetComponent<TextMeshProUGUI>().text = powerups.jumpPowerup.ToString();
             Debug.Log(powerups.jumpPowerup);
         }
         if (other.tag == "freezepower")
         {
             coinSource.Play();
             powerups.freezePowerup++;
-            fCount.GetComponent<TextMeshPro>().text = powerups.freezePowerup.ToString();
+            fCount.GetComponent<TextMeshProUGUI>().text = powerups.freezePowerup.ToString();
             Debug.Log(powerups.freezePowerup);
         }
 
@@ -203,8 +205,8 @@ public class Ballmovement : MonoBehaviour
         if (powerups.jumpPowerup > 0)
         {
             powerups.jumpPowerup--;
-            jCount.GetComponent<TextMeshPro>().text = powerups.jumpPowerup.ToString();
-            rb.AddForce(new Vector3(0,-2), ForceMode.Impulse);
+            jCount.GetComponent<TextMeshProUGUI>().text = powerups.jumpPowerup.ToString();
+            rb.AddForce(new Vector3(0,5), ForceMode.Impulse);
         }
     }
 
@@ -213,7 +215,7 @@ public class Ballmovement : MonoBehaviour
         if (powerups.freezePowerup > 0)
         {
             powerups.freezePowerup--;
-            fCount.GetComponent<TextMeshPro>().text = powerups.freezePowerup.ToString();
+            fCount.GetComponent<TextMeshProUGUI>().text = powerups.freezePowerup.ToString();
             levelMovement.frozen = true;
             frozen = true;
         }
