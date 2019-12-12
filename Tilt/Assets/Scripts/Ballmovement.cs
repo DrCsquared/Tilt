@@ -152,12 +152,14 @@ public class Ballmovement : MonoBehaviour
         }
         if(other.tag == "jumppower")
         {
+            coinSource.Play();
             powerups.jumpPowerup++;
             jCount.GetComponent<TextMeshPro>().text = powerups.jumpPowerup.ToString();
             Debug.Log(powerups.jumpPowerup);
         }
         if (other.tag == "freezepower")
         {
+            coinSource.Play();
             powerups.freezePowerup++;
             fCount.GetComponent<TextMeshPro>().text = powerups.freezePowerup.ToString();
             Debug.Log(powerups.freezePowerup);
