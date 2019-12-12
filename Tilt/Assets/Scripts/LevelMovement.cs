@@ -56,7 +56,7 @@ public class LevelMovement : MonoBehaviour
 
 
     void Update() // runs 60 fps or so
-    {        
+    {
         if (!paused)
         {
             if (flipping)
@@ -89,21 +89,18 @@ public class LevelMovement : MonoBehaviour
             }
             else if (frozen)
             {
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButtonDown(0) && Input.mousePosition.y <= 800)
                 {
                     pointA = new Vector3(Input.mousePosition.x, 0, Input.mousePosition.y);
-                    init = Input.mousePosition;
-                    if (Input.mousePosition.y <= 400)
-                    {
-                        joy.transform.position = init;
-                        threshold.transform.position = init;
-                        joy.SetActive(true);
-                        threshold.SetActive(true);
-                    }
-                }
-                if (Input.GetMouseButton(0))
-                {
+                    init = Input.mousePosition;                                            
+                    joy.transform.position = init;
+                    threshold.transform.position = init;
+                    joy.SetActive(true);
+                    threshold.SetActive(true);
                     drag = true;
+                }
+                if (Input.GetMouseButton(0) && drag)
+                {                   
                     pointB = new Vector3(Input.mousePosition.x, 0, Input.mousePosition.y);
                     current = Input.mousePosition;
                     clamp = Vector3.ClampMagnitude((current - init), 70);
@@ -153,8 +150,7 @@ public class LevelMovement : MonoBehaviour
         }
         flip = Quaternion.Euler(0,0, zPos);
         flipping = true;
-        StartCoroutine("wait");
-        
+        StartCoroutine("wait");        
     }
 
 }

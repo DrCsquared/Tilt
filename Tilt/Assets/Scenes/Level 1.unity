@@ -5345,12 +5345,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -7929,8 +7929,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746309651}
-  m_LocalRotation: {x: 0.31130058, y: 0, z: 0, w: 0.95031154}
-  m_LocalPosition: {x: 3.73, y: 19.791628, z: -5.3145967}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9022,7 +9022,7 @@ RectTransform:
   m_GameObject: {fileID: 870732733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1766841451}
   m_RootOrder: 2
@@ -18049,7 +18049,7 @@ RectTransform:
   m_GameObject: {fileID: 2032766240}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1766841451}
   m_RootOrder: 3
@@ -19105,17 +19105,17 @@ PrefabInstance:
     - target: {fileID: 7373636065755057535, guid: be7265f6f4fe7c040a77c91177117303,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.3126955
+      value: 2.96
       objectReference: {fileID: 0}
     - target: {fileID: 7373636065755057535, guid: be7265f6f4fe7c040a77c91177117303,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5604577
+      value: 1.56
       objectReference: {fileID: 0}
     - target: {fileID: 7373636065755057535, guid: be7265f6f4fe7c040a77c91177117303,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.47
+      value: 14.89
       objectReference: {fileID: 0}
     - target: {fileID: 7373636065755057535, guid: be7265f6f4fe7c040a77c91177117303,
         type: 3}

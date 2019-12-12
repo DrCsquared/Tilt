@@ -157,14 +157,12 @@ public class Ballmovement : MonoBehaviour
             coinSource.Play();
             powerups.jumpPowerup++;
             jCount.GetComponent<TextMeshProUGUI>().text = powerups.jumpPowerup.ToString();
-            Debug.Log(powerups.jumpPowerup);
         }
         if (other.tag == "freezepower")
         {
             coinSource.Play();
             powerups.freezePowerup++;
             fCount.GetComponent<TextMeshProUGUI>().text = powerups.freezePowerup.ToString();
-            Debug.Log(powerups.freezePowerup);
         }
 
     }
@@ -206,7 +204,7 @@ public class Ballmovement : MonoBehaviour
         {
             powerups.jumpPowerup--;
             jCount.GetComponent<TextMeshProUGUI>().text = powerups.jumpPowerup.ToString();
-            rb.AddForce(new Vector3(0,5), ForceMode.Impulse);
+            rb.AddForce(new Vector3(0,8), ForceMode.Impulse);
         }
     }
 
