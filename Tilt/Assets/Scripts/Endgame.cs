@@ -91,8 +91,10 @@ public class Endgame : MonoBehaviour
 
     public void WinCanvas()
     {
+        isPaused = true;
         score.SetActive(false);
         win.SetActive(true);
+        win.GetComponentInChildren<Text>().text = score.GetComponentInChildren<Text>().text;
 
         if (SceneManager.GetActiveScene().name == "Level 1")
         {
@@ -129,8 +131,7 @@ public class Endgame : MonoBehaviour
 
     public void LoseCanvas()
     {
-        lose.SetActive(true);
-        lose.GetComponentInChildren<Text>().text = score.GetComponentInChildren<Text>().text;
+        lose.SetActive(true);        
         score.SetActive(false);
     }
 }

@@ -47,6 +47,12 @@ public class Ballmovement : MonoBehaviour
 
     private float timer;
 
+    Inventory powerups = new Inventory();
+
+    public bool frozen;
+
+    private float freezeTimer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -95,6 +101,16 @@ public class Ballmovement : MonoBehaviour
             rb.constraints = RigidbodyConstraints.None;
             rb.AddForce(new Vector3(0, 15), ForceMode.Impulse);
             done = false;
+        }
+        if (frozen)
+        {
+            freezeTimer += Time.deltaTime;
+            if (freezeTimer > 20)
+            {
+                frozen = false;
+                levelMovement.frozen = false;
+                freezeTimer = 0;
+            }
         }
 
     }
@@ -156,6 +172,25 @@ public class Ballmovement : MonoBehaviour
         else if (other.tag == "bottomright" && transform.position.y > 0)
         {
             rb.AddForce(new Vector3(2, 0, -2), ForceMode.Impulse);
+        }
+    }
+
+    public void Jump()
+    {
+        if (powerups.jumpPowerup > 0)
+        {
+            powerups.jumpPowerup--;
+            rb.AddForce(new Vector3(0,-2), ForceMode.Impulse);
+        }
+    }
+
+    public void Freeze()
+    {
+        if (powerups.freezePowerup > 0)
+        {
+            powerups.freezePowerup--;
+            levelMovement.frozen = true;
+            frozen = true;
         }
     }
 }

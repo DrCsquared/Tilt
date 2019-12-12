@@ -26,12 +26,32 @@ public class LevelMovement : MonoBehaviour
     [SerializeField]
     private Ballmovement ballmovement;
 
+    [SerializeField]
+    private GameObject player;
+
     public bool paused;
+
+    public bool frozen;
+
+    private float ballSpeed = 10.0f;
+    private bool drag = false;
+
+    private Vector3 pointA;
+    private Vector3 pointB;
+    [SerializeField]
+    private GameObject joy;
+    [SerializeField]
+    private GameObject threshold;
+    private Vector3 init;
+    private Vector3 current;
+    private Vector3 clamp;
 
     void Start()
     {
         // copy the rotation of the object itself into a buffer
         localRotation = transform.rotation;
+        joy.SetActive(false);
+        threshold.SetActive(false);
     }
 
 
@@ -51,7 +71,7 @@ public class LevelMovement : MonoBehaviour
                 }
                 down = !down;
             }
-            else
+            else if (!frozen)
             {
                 // find speed based on delta
                 float curSpeed = Time.deltaTime * speed;
@@ -61,6 +81,51 @@ public class LevelMovement : MonoBehaviour
                 // then rotate this object accordingly to the new angle
                 transform.rotation = localRotation;
             }
+            else if (frozen)
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    pointA = new Vector3(Input.mousePosition.x, 0, Input.mousePosition.y);
+                    init = Input.mousePosition;
+                    if (Input.mousePosition.y <= 400)
+                    {
+                        joy.transform.position = init;
+                        threshold.transform.position = init;
+                        joy.SetActive(true);
+                        threshold.SetActive(true);
+                    }
+                }
+                if (Input.GetMouseButton(0))
+                {
+                    drag = true;
+                    pointB = new Vector3(Input.mousePosition.x, 0, Input.mousePosition.y);
+                    current = Input.mousePosition;
+                    clamp = Vector3.ClampMagnitude((current - init), 100);
+                    joy.transform.position = new Vector3(init.x + clamp.x, init.y + clamp.y);
+
+                }
+                else
+                {
+                    drag = false;
+                    joy.SetActive(false);
+                    threshold.SetActive(false);    
+                }
+
+                if (drag)
+                {
+                    Vector3 offset = pointB - pointA;
+                    Vector3 direction = Vector3.ClampMagnitude(offset, 1);                  
+                    Move(direction);
+                }
+            }
+        }
+    }
+
+    void Move(Vector3 dir)
+    {
+        if (player != null)
+        {
+            player.GetComponent<Rigidbody>().AddForce(dir * speed);
         }
     }
 
