@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Ballmovement : MonoBehaviour
 {
@@ -52,6 +53,13 @@ public class Ballmovement : MonoBehaviour
     public bool frozen;
 
     private float freezeTimer;
+
+    [SerializeField]
+    private GameObject jCount;
+
+    [SerializeField]
+    private GameObject fCount;
+
 
     // Start is called before the first frame update
     void Start()
@@ -142,6 +150,19 @@ public class Ballmovement : MonoBehaviour
             transform.position = teleporters[newtele].transform.position;
             transform.position += new Vector3 (0,.2f);
         }
+        if(other.tag == "jumppower")
+        {
+            powerups.jumpPowerup++;
+            jCount.GetComponent<TextMeshPro>().text = powerups.jumpPowerup.ToString();
+            Debug.Log(powerups.jumpPowerup);
+        }
+        if (other.tag == "freezepower")
+        {
+            powerups.freezePowerup++;
+            fCount.GetComponent<TextMeshPro>().text = powerups.freezePowerup.ToString();
+            Debug.Log(powerups.freezePowerup);
+        }
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -180,6 +201,7 @@ public class Ballmovement : MonoBehaviour
         if (powerups.jumpPowerup > 0)
         {
             powerups.jumpPowerup--;
+            jCount.GetComponent<TextMeshPro>().text = powerups.jumpPowerup.ToString();
             rb.AddForce(new Vector3(0,-2), ForceMode.Impulse);
         }
     }
@@ -189,6 +211,7 @@ public class Ballmovement : MonoBehaviour
         if (powerups.freezePowerup > 0)
         {
             powerups.freezePowerup--;
+            fCount.GetComponent<TextMeshPro>().text = powerups.freezePowerup.ToString();
             levelMovement.frozen = true;
             frozen = true;
         }

@@ -33,7 +33,7 @@ public class LevelMovement : MonoBehaviour
 
     public bool frozen;
 
-    private float ballSpeed = 10.0f;
+    private float ballSpeed = 8.0f;
     private bool drag = false;
 
     private Vector3 pointA;
@@ -100,7 +100,7 @@ public class LevelMovement : MonoBehaviour
                     drag = true;
                     pointB = new Vector3(Input.mousePosition.x, 0, Input.mousePosition.y);
                     current = Input.mousePosition;
-                    clamp = Vector3.ClampMagnitude((current - init), 100);
+                    clamp = Vector3.ClampMagnitude((current - init), 70);
                     joy.transform.position = new Vector3(init.x + clamp.x, init.y + clamp.y);
 
                 }
@@ -125,7 +125,7 @@ public class LevelMovement : MonoBehaviour
     {
         if (player != null)
         {
-            player.GetComponent<Rigidbody>().AddForce(dir * speed);
+            player.GetComponent<Rigidbody>().AddForce(dir * ballSpeed);
         }
     }
 

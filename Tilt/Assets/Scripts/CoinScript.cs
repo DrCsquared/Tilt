@@ -21,7 +21,14 @@ public class CoinScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.Rotate(new Vector3(0, 45, 0) * Time.deltaTime);
+        if (gameObject.tag == "jumppower")
+        {
+            transform.Rotate(new Vector3(45, 0, 0) * Time.deltaTime);
+        }
+        else
+        {
+            transform.Rotate(new Vector3(0, 45, 0) * Time.deltaTime);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

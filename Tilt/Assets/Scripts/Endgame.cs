@@ -77,7 +77,7 @@ public class Endgame : MonoBehaviour
 
     public void Click_Resume()
     {
-        isPaused = true;
+        isPaused = false;
         paused.SetActive(false);
         pause.SetActive(true);
         playerRb.constraints = RigidbodyConstraints.None;

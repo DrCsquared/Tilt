@@ -8,6 +8,12 @@ TagManager:
   - StageFlip
   - border
   - teleporter
+  - topleft
+  - bottomright
+  - bottomleft
+  - topright
+  - jumppower
+  - freezepower
   layers:
   - Default
   - TransparentFX
